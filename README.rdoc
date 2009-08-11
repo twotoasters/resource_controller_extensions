@@ -1,6 +1,25 @@
 = resource_controller_extensions
 
-Description goes here.
+This plugin provides support for adding reasonable default action handlers for
+several types of Resources that you may wants to export via ResourceController:
+* XML - For XML web services
+* JSON - For JSON web services
+* FBML - For Facebook FBML based pages.
+
+Installation:
+$ sudo gem install Objective3-resource_controller_extensions --source http://sources.github.com
+
+Then for the types of responses you need support for:
+
+require 'resource_controller_extensions/xml'
+require 'resource_controller_extensions/json'
+require 'resource_controller_extensions/fbml'
+
+or pull them all in via:
+
+require 'resource_controller_extensions'
+
+And enjoy!
 
 == Copyright
 
