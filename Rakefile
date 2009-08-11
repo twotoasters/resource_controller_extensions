@@ -7,7 +7,7 @@ begin
     gem.name = "resource_controller_extensions"
     gem.summary = %Q{TODO}
     gem.email = "blake@objective3.com"
-    gem.homepage = "http://github.com/blakewatters/resource_controller_extensions"
+    gem.homepage = "http://github.com/Objective3/resource_controller_extensions"
     gem.authors = ["Blake Watters"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
