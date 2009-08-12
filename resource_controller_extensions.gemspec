@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Blake Watters"]
-  s.date = %q{2009-08-11}
+  s.date = %q{2009-08-12}
   s.email = %q{blake@objective3.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "lib/resource_controller_extensions/fbml.rb",
      "lib/resource_controller_extensions/json.rb",
      "lib/resource_controller_extensions/xml.rb",
+     "resource_controller_extensions.gemspec",
      "test/resource_controller_extensions_test.rb",
      "test/test_helper.rb"
   ]
