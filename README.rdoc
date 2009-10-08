@@ -9,15 +9,20 @@ several types of Resources that you may wants to export via ResourceController:
 Installation:
 $ sudo gem install Objective3-resource_controller_extensions --source http://sources.github.com
 
-Then for the types of responses you need support for:
+If you want to load XML, JSON, and FBML support, simply load the Gem in your config/environment file:
 
-require 'resource_controller_extensions/xml'
-require 'resource_controller_extensions/json'
-require 'resource_controller_extensions/fbml'
+config.gem 'Objective3-resource_controller_extensions', :lib => 'resource_controller_extensions'
 
-or pull them all in via:
+To selectively enable one or more handlers, load the Gem and require the handlers in an after_initialize block:
 
-require 'resource_controller_extensions'
+config.gem 'Objective3-resource_controller_extensions', :lib => false
+
+# Pull in JSON and XML support for ResourceController
+config.after_initialize do
+  require 'resource_controller_extensions/xml'
+  require 'resource_controller_extensions/json'
+  require 'resource_controller_extensions/fbml'
+end
 
 And enjoy!
 
