@@ -7,15 +7,15 @@ several types of Resources that you may wants to export via ResourceController:
 * FBML - For Facebook FBML based pages.
 
 Installation:
-$ sudo gem install Objective3-resource_controller_extensions --source http://sources.github.com
+$ sudo gem install resource_controller_extensions
 
 If you want to load XML, JSON, and FBML support, simply load the Gem in your config/environment file:
 
-config.gem 'Objective3-resource_controller_extensions', :lib => 'resource_controller_extensions'
+config.gem 'resource_controller_extensions', :lib => 'resource_controller_extensions'
 
 To selectively enable one or more handlers, load the Gem and require the handlers in an after_initialize block:
 
-config.gem 'Objective3-resource_controller_extensions', :lib => false
+config.gem 'resource_controller_extensions', :lib => false
 
 # Pull in JSON and XML support for ResourceController
 config.after_initialize do
