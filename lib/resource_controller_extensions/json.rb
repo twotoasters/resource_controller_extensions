@@ -17,7 +17,7 @@ module ResourceControllerExtensions
           show.wants.json { render :json => object}
           edit.wants.json { render :json => object}
 
-          create.wants.json { render :json => object, :status => :created, :location => object }
+          create.wants.json { render :json => object, :status => :created, :location => object_url }
           create.failure.wants.json { render :json => object.errors, :status => :unprocessable_entity }
           destroy.wants.json { head :ok }
           update.wants.json { head :ok }

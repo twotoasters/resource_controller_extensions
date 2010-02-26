@@ -18,7 +18,7 @@ module ResourceControllerExtensions
           edit.wants.xml { render :xml => object}
           new_action.wants.xml { render :xml => object }
 
-          create.wants.xml { render :xml => object, :status => :created, :location => object }
+          create.wants.xml { render :xml => object, :status => :created, :location => object_url }
           create.failure.wants.xml { render :xml => object.errors, :status => :unprocessable_entity }
           destroy.wants.xml { head :ok }
           update.wants.xml { head :ok }
