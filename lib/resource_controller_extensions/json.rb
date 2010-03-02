@@ -18,10 +18,10 @@ module ResourceControllerExtensions
           edit.wants.json { render :json => object}
 
           create.wants.json { render :json => object, :status => :created, :location => object_url }
-          create.failure.wants.json { render :json => object.errors, :status => :unprocessable_entity }
+          create.failure.wants.json { render :json => {:errors => object.errors}, :status => :unprocessable_entity }
           destroy.wants.json { head :ok }
           update.wants.json { head :ok }
-          update.failure.wants.json { render :json => object.errors, :status => :unprocessable_entity }
+          update.failure.wants.json { render :json => {:errors => object.errors}, :status => :unprocessable_entity }
         end
       end
     end
