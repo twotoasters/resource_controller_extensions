@@ -5,9 +5,9 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "resource_controller_extensions"
-    gem.summary = %Q{TODO}
-    gem.email = "blake@objective3.com"
-    gem.homepage = "http://github.com/Objective3/resource_controller_extensions"
+    gem.summary = %Q{Provides sensible defaults action for XML, JSON, and FBML to Resource Controller.}
+    gem.email = "blake@twotoasters.com"
+    gem.homepage = "http://github.com/twotoasters/resource_controller_extensions"
     gem.authors = ["Blake Watters"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
